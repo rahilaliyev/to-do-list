@@ -1,0 +1,128 @@
+/** @format */
+
+.body-container {
+  background: white;
+  width: 600px;
+  height: 500px;
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#clear {
+  background-color: red;
+  border: 1px solid red;
+  padding: 8px;
+  color: white;
+  font-weight: 500;
+  transition: 0.5s;
+  margin-right: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#clear:hover {
+  background-color: white;
+  color: red;
+}
+
+#clear i {
+  margin-right: 6px;
+}
+
+#clear.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 70%;
+  height: 45px;
+  padding: 12px;
+  border: 2px solid #d1d3d4;
+  font-weight: 500;
+  position: relative;
+  border-radius: 8px;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  background-color: #066acd;
+  border: 1px solid #066acd;
+  color: white;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+form button:hover {
+  background-color: white;
+  color: #066acd;
+}
+form button i {
+  margin-right: 6px;
+}
+
+ul {
+  margin-top: 10px;
+  padding: 2px 0;
+  overflow: auto;
+  max-height: 340px;
+  padding-right: 10px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #066acd;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.done {
+  transition: 0.5s;
+  margin-right: 12px;
+}
+
+.done:hover {
+  color: #2eb62c;
+}
+
+.remove {
+  transition: 0.5s;
+}
+
+.remove:hover {
+  color: red;
+}
+
+.done-list {
+  background-color: #2eb62c;
+}
+.line {
+  text-decoration: line-through;
+}
+
+.icons i {
+  cursor: pointer;
+}
